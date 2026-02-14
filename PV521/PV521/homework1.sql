@@ -1,4 +1,4 @@
-CREATE DATABASE Academy
+﻿CREATE DATABASE Academy
 
 USE Academy;
 
@@ -99,3 +99,70 @@ VALUES
 
 SELECT * FROM Teachers;
 
+--до домашнього завдання за 06.02
+
+--Вивести таблицю кафедр, але розташувати її поля у зворотному порядку
+
+SELECT Financing, Name, Id
+FROM Departments;
+
+-- Вивести назви груп та їх рейтинги з псевдонімами
+
+SELECT Name AS [Group Name],
+       Rating AS [Group Rating]
+FROM Groups;
+
+--Прізвище, відсоток ставки до надбавки та до загальної зарплати
+
+SELECT Surname,
+       CASE 
+           WHEN Premium = 0 THEN NULL
+           ELSE (Salary * 100.0 / Premium) 
+       END AS [Salary% of Premium],
+       (Salary * 100.0 / (Salary + Premium)) AS [Salary% of Total]
+FROM Teachers;
+
+--Назви кафедр з фінансуванням < 11000 або > 25000
+
+SELECT Name
+FROM Departments
+WHERE Financing < 11000
+   OR Financing > 25000;
+
+--Назви факультетів, окрім «Computer Science»
+
+SELECT Name
+FROM Faculties
+WHERE Name <> 'Computer Science';
+
+--Викладачі, прийняті до 2000 року
+
+SELECT Surname, EmploymentDate
+FROM Teachers
+WHERE EmploymentDate < '2000-01-01';
+
+--Назви кафедр перед «Software Development»
+
+SELECT Name AS [Name of Department]
+FROM Departments
+WHERE Name < 'Software Development'
+ORDER BY Name;
+
+--Групи 5-го курсу з рейтингом 2–4
+
+SELECT Name
+FROM Groups
+WHERE Year = 5
+  AND Rating BETWEEN 2 AND 4;
+
+--Всі викладачі з зарплатою (Salary) більше 10000
+
+SELECT Surname, Name, Salary
+FROM Teachers
+WHERE Salary > 10000;
+
+--Кафедри з мінімальним та максимальним фінансуванням
+
+SELECT MIN(Financing) AS MinFinancing, 
+       MAX(Financing) AS MaxFinancing
+FROM Departments;
