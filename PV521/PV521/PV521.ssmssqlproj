@@ -21,9 +21,21 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="homework1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:QQ12\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>QQ12\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>homework1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="homework3.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:QQ12\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>QQ12\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>homework3.sql</FullPath>
+        </FileNode>
         <FileNode Name="Lesson2.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:QQ12\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>QQ12\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Lesson2.sql</FullPath>
         </FileNode>
@@ -32,6 +44,18 @@
           <AssociatedConnSrvName>QQ12\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Lesson3.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Lesson5.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:QQ12\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>QQ12\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Lesson5.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Lesson6.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:QQ12\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>QQ12\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Lesson6.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
